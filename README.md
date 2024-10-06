@@ -7,37 +7,59 @@ This project analyzes e-commerce customer behavior using a dataset of purchases,
 ## Project Structure
 
 - **data/**: Contains the raw and cleaned datasets.
-- **data_cleaning/**: Python script to clean the raw dataset.
-- **data_analysis/**: Jupyter notebook for analyzing and visualizing data.
+- **scripts/**: Contains Python scripts for cleaning and analyzing the data.
+- **notebooks/**: Jupyter notebooks for detailed analysis and visualization.
 
 ## Steps
 
-1. Data cleaning: Executed via `data_cleaning/data_cleaning_script.py`.
-2. Data analysis and visualization: Executed via `data_analysis/ecommerce_analysis.ipynb`.
+1. **Data Cleaning**:
+   - Executed via `scripts/data_cleaning_script.py`.
+2. **Data Analysis and Visualization**:
+   - Performed in the Jupyter notebook `notebooks/ecommerce_analysis.ipynb`.
 
 ## Visualizations
 
-- Total Purchases by Product Category (Bar chart)
-- Payment Method Distribution (Pie chart)
-- Customer Age Distribution (Histogram)
-- Purchases Over Time (Line chart)
+- **Total Purchases by Product Category** (Bar chart)
+- **Payment Method Distribution** (Pie chart)
+- **Customer Age Distribution** (Histogram)
+- **Purchases Over Time** (Line chart)
 
 ## How to Run
 
-- Activate virtual environment:
-  ```bash
-  source venv/bin/activate
-  ```
-- Run the cleaning script:
-  ```bash
-  python data_cleaning/data_cleaning_script.py
-  ```
-- Launch the Jupyter notebook:
-  ```bash
-  jupyter notebook
-  ```
+1. **Set up the environment**:
+
+   - Create and activate a virtual environment:
+     ```bash
+     python3 -m venv venv
+     source venv/bin/activate
+     ```
+
+2. **Install the required packages**:
+
+   - Install dependencies listed in `requirements.txt`:
+     ```bash
+     pip install -r requirements.txt
+     ```
+
+3. **Run the cleaning script**:
+
+   - Clean the raw dataset using the provided Python script:
+     ```bash
+     python scripts/data_cleaning_script.py
+     ```
+
+4. **Launch the Jupyter notebook**:
+   - For data analysis and visualization:
+     ```bash
+     jupyter notebook notebooks/ecommerce_analysis.ipynb
+     ```
 
 ## Requirements
 
-- pandas
-- matplotlib
+- `pandas`
+- `matplotlib`
+- `seaborn` (for enhanced visualizations)
+
+---
+
+This README structure reflects the new directory organization and provides clear instructions on setting up, running the project, and what tools are needed.
