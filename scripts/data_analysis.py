@@ -24,6 +24,6 @@ top_categories = df_cleaned.groupby('Product Category')['Total Purchase Amount']
 print(top_categories)
 
 # Optionally, save outputs to a file
-# df_cleaned.describe().to_csv('data/summary_statistics.csv')
-# age_churn_summary.to_csv('data/age_churn_summary.csv')
-# top_categories.to_csv('data/top_categories.csv')
+df_cleaned.describe().to_csv('data/summary_statistics.csv')
+age_churn_summary.to_csv('data/age_churn_summary.csv')
+top_categories.to_csv('data/top_categories.csv')
